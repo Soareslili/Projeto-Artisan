@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Search, ShoppingBag, Menu, X } from "lucide-react";
-import { useCart } from "../hooks/useCart";
+import { useCart} from "../contexts/CartContext"
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

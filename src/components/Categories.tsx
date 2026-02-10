@@ -16,12 +16,12 @@ const categories = [
 
 const Categories = () => {
     return (
-        <section id="categories" className="section-padding gradient-warm py-20">
+        <section id="categories" className="section-padding bg-foreground/5 py-20">
             <div className="container-custom">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="heading-section text-3xl text-background font-Cormorant font-bold mb-4">Nossa linha completa</h2>
-                    <p className="text-body text-warm-gray max-w-2xl mx-auto">
+                    <p className="text-body text-muted-foreground max-w-2xl mx-auto">
                         Artigos de couro artesanais projetados para o estilo de vida moderno. Cada peça é feita com cuidado e construída para durar.
                     </p>
                 </div>
