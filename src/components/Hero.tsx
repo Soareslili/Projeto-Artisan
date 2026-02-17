@@ -2,7 +2,7 @@ import heroBags from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-24">
+    <section id="home" className="relative min-h-screen flex items-center pt-24">
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img

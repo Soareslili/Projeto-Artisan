@@ -65,22 +65,22 @@ const Accessories = () => {
                 </div>
 
                 {/* Accessories Grid */}
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 mr-10">
                     {accessories.map((accessory, index) => (
                         <div
                             key={accessory.id}
-                            className="cursor-pointer ml-20"
+                            className="cursor-pointer ml-20 bg-foreground rounded-2xl"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
-                            <div className="relative w-80 h-80 aspect-square rounded-2xl overflow-hidden bg-secondary mb-4 shadow-soft group-hover:shadow-warm transition-all duration-300">
+                            <div className="relative w-full aspect-square overflow-hidden bg-secondary mb-4 shadow-soft group-hover:shadow-warm transition-all duration-300">
                                 <img
                                     src={accessory.image}
                                     alt={accessory.name}
-                                    className="w-80 h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                 />
                             </div>
-                            <div className="flex items-center justify-between mr-40 ">
-                                <div>
+                            <div className="flex items-center justify-between mb-6">
+                                <div className="ml-2">
                                     <h3 className="text-body font-medium text-accent-foreground mb-1">
                                         {accessory.name}
                                     </h3>
@@ -90,7 +90,7 @@ const Accessories = () => {
                                 </div>
                                 <button
                                     onClick={() => handleAddToCart(accessory)}
-                                    className="p-2 bg-foreground hover:bg-primary cursor-pointer hover:text-primary-foreground rounded-full transition-all duration-300"
+                                    className=" ml-58 p-2 bg-foreground hover:bg-primary cursor-pointer hover:text-primary-foreground rounded-full transition-all duration-300"
                                     aria-label={`Add ${accessory.name} to cart`}
                                 >
                                     <ShoppingCart size={16} />

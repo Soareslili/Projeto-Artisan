@@ -105,14 +105,14 @@ const CheckoutModal = () => {
         <DialogHeader>
           <DialogTitle>Checkout</DialogTitle>
           <DialogDescription>
-            Complete your order details below
+           Preencha os detalhes do seu pedido abaixo
           </DialogDescription>
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Order Summary */}
           <div className="bg-muted-foreground rounded-xl p-4 space-y-3">
-            <h4 className="font-medium text-foreground">Order Summary</h4>
+            <h4 className="font-medium text-foreground">Resumo do Pedido</h4>
             {items.map((item) => (
               <div key={item.id} className="flex justify-between text-small">
                 <span className="text-accent-foreground">
@@ -129,7 +129,7 @@ const CheckoutModal = () => {
 
           {/* Shipping Information */}
           <div className="space-y-4">
-            <h4 className="font-medium text-foreground">Shipping Information</h4>
+            <h4 className="font-medium text-foreground">Informações de Entrega</h4>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="firstName">Seu Nome</Label>
@@ -143,7 +143,7 @@ const CheckoutModal = () => {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="lastName">Last Name</Label>
+                <Label htmlFor="lastName">Sobrenome</Label>
                 <Input
                   id="lastName"
                   name="lastName"
@@ -167,7 +167,7 @@ const CheckoutModal = () => {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="address">Address</Label>
+              <Label htmlFor="address">Endereço</Label>
               <Input
                 id="address"
                 name="address"
@@ -179,7 +179,7 @@ const CheckoutModal = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="city">City</Label>
+                <Label htmlFor="city">Cidade</Label>
                 <Input
                   id="city"
                   name="city"
@@ -190,7 +190,7 @@ const CheckoutModal = () => {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="zipCode">ZIP Code</Label>
+                <Label htmlFor="zipCode">CEP</Label>
                 <Input
                   id="zipCode"
                   name="zipCode"
@@ -205,9 +205,9 @@ const CheckoutModal = () => {
 
           {/* Payment Information */}
           <div className="space-y-4">
-            <h4 className="font-medium text-foreground">Payment Information</h4>
+            <h4 className="font-medium text-foreground">Informações de Pagamento</h4>
             <div className="space-y-2">
-              <Label htmlFor="cardNumber">Card Number</Label>
+              <Label htmlFor="cardNumber">Número do Cartão</Label>
               <Input
                 id="cardNumber"
                 name="cardNumber"
@@ -220,7 +220,7 @@ const CheckoutModal = () => {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="expiry">Expiry Date</Label>
+                <Label htmlFor="expiry">Data de Expiração</Label>
                 <Input
                   id="expiry"
                   name="expiry"

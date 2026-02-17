@@ -4,6 +4,7 @@ import Categories from "./components/Categories"
 import CheckoutModal from "./components/CheckoutModal"
 import Contact from "./components/Contact"
 import Features from "./components/Features"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Newsletter from "./components/Newsletter"
@@ -28,6 +29,7 @@ function App() {
       <Contact />
       <Newsletter />
       <CheckoutModal />
+      <Footer />
 
     </>
   )
