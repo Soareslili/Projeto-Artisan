@@ -19,7 +19,7 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
           cn(className, isActive && activeClassName, isPending && pendingClassName)
         }
         {...props}
-      />
+      />   
     );
   },
 );
