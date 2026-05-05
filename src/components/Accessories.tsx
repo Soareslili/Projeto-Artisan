@@ -1,4 +1,4 @@
-import { ShoppingCart } from "lucide-react";
+
 import { useCart } from "../contexts/CartContext";
 import { useToast } from "../hooks/use-toast";
 import productWallet from "../assets/product-wallet.png";
@@ -78,25 +78,33 @@ const Accessories = () => {
                                     alt={accessory.name}
                                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                                 />
+                                 {accessory && (
+                  <span className="absolute top-4 left-4 bg-primary text-foreground text-xs font-medium px-3 py-1 rounded-full">
+                   Novo
+                  </span>
+                )}
                             </div>
-                            <div className="flex items-center justify-between mb-6">
+                            <div className="flex flex-col mb-6">
                                 <div className="ml-2">
                                     <h3 className="text-body font-medium text-accent-foreground mb-1">
                                         {accessory.name}
                                     </h3>
-                                    <span className="text-small text-muted-foreground">
+                                    <span className="text-small text-primary-foregrounds">
                                         ${accessory.price}
                                     </span>
                                 </div>
                                 <button
                                     onClick={() => handleAddToCart(accessory)}
-                                    className=" ml-58 p-2 bg-foreground hover:bg-primary cursor-pointer hover:text-primary-foreground rounded-full transition-all duration-300"
+                                   className="w-[200px] px-4 py-2 mt-4 ml-20 bg-accent  hover:text-primary-foreground cursor-pointer rounded-2xl text-small font-medium transition-all duration-300"
                                     aria-label={`Add ${accessory.name} to cart`}
                                 >
-                                    <ShoppingCart size={16} />
+                            
+                                     Adicionar ao Carrinho
+                                    
+
                                 </button>
                             </div>
-                        </div>
+                        </div> 
                     ))}
                 </div>
             </div>
