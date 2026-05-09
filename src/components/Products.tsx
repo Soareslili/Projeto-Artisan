@@ -8,6 +8,10 @@ import productBriefcase from "../assets/product-briefcase.png";
 import productMessenger from "../assets/product-messenger.png";
 import productWallet from "../assets/product-wallet.png";
 
+import productPassport from "../assets/product-passport.png";
+import productLaptopSleeve from "../assets/product-laptop-sleeve.png";
+import productKeyholder from "../assets/product-keyholder.png";
+
 const products = [
   {
     id: 1,
@@ -63,6 +67,31 @@ const products = [
     image: productWallet,
     isNew: false,
   },
+
+    {
+        id: 2,
+        name: "Passport Holder",
+        price: 85,
+        rating: 4,
+        reviews: 67,
+        image: productPassport,
+    },
+    {
+        id: 3,
+        name: "Laptop Sleeve",
+        price: 195,
+        rating: 5,
+        reviews: 89,
+        image: productLaptopSleeve,
+    },
+    {
+        id: 4,
+        name: "Key Holder",
+        price: 45,
+        rating: 4,
+        reviews: 123,
+        image: productKeyholder,
+    },
 ];
 
 const Products = () => {

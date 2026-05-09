@@ -1,4 +1,4 @@
-import Accessories from "./components/Accessories"
+
 import CartSheet from "./components/CartSheet"
 import Categories from "./components/Categories"
 import CheckoutModal from "./components/CheckoutModal"
@@ -25,7 +25,6 @@ function App() {
       <Products />
       <CartSheet />
       <Features />
-      <Accessories />
       <Contact />
       <Newsletter />
       <CheckoutModal />
