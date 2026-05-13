@@ -10,7 +10,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+ 
     console.log("Form submitted:", formData);
     setFormData({ name: "", email: "", message: "" });
   };
@@ -19,7 +19,7 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-[#F6F4EF py-20">
       <div className="container-custom">
         <div className="max-w-2xl mx-auto">
-          {/* Header */}
+        
           <div className="text-center mb-12">
             <h2 className="heading-section text-primary-foreground text-2xl font-Cormorant font-bold mb-4">Entre em contato</h2>
             <p className="text-body text-muted-foreground font-InterA">
@@ -27,7 +27,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Form */}
+       
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>

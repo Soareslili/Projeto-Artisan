@@ -33,15 +33,15 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-around h-16 md:h-20">
-          {/* Mobile Menu Button */}
+        
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-accent-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Navigation - Desktop */}
+          
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.slice(0, 3).map((link) => (
               <a
@@ -54,14 +54,14 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Logo */}
+        
           <a href="#" className="flex items-center justify-center">
             <span className="font-serif text-2xl md:text-3xl font-semibold text-background tracking-tight">
               ARTISAN
             </span>
           </a>
 
-          {/* Navigation - Desktop Right */}
+         
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.slice(3).map((link) => (
               <a
@@ -74,7 +74,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Icons */}
+        
           <div className="flex items-center gap-4">
             <button className="p-2 text-background cursor-pointer hover:text-ring transition-colors">
               <Search size={20} />
@@ -95,7 +95,7 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+     
       <div
         className={`md:hidden absolute top-full left-0 right-0 bg-background border-t border-border transition-all duration-300 ${
           isMobileMenuOpen

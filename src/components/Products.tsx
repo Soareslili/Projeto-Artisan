@@ -114,7 +114,7 @@ const Products = () => {
   return (
     <section id="products" className="section-padding bg-foreground/5 py-20">
       <div className="container-custom">
-        {/* Header */}
+       
         <div className="text-center mb-16">
           <h2 className="heading-section text-3xl text-background font-Cormorant font-bold mb-4">Confira nossa linha</h2>
           <p className="text-body text-muted-foreground max-w-2xl mx-auto">
@@ -122,7 +122,7 @@ const Products = () => {
           </p>
         </div>
 
-        {/* Products Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 ml-8 mr-8">
           {products.map((product, index) => (
             <div
@@ -130,7 +130,7 @@ const Products = () => {
               className="bg-popover-foreground group rounded-2xl"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Image Container */}
+            
               <div className="relative h-70 overflow-hidden bg-secondary">
                 <img
                   src={product.image}
@@ -144,11 +144,11 @@ const Products = () => {
                 )}
               </div>
 
-              {/* Content */}
+              
               <div className="p-4">
                 <h3 className="heading-card text-accent-foreground text-lg font-Inter mb-2">{product.name}</h3>
 
-                {/* Rating */}
+              
                 <div className="flex items-center gap-2 mb-4">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
@@ -168,7 +168,7 @@ const Products = () => {
                   </span>
                 </div>
 
-                {/* Price & Button */}
+              
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-semibold text-primary-foreground">
                     ${product.price}

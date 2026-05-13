@@ -26,7 +26,7 @@ const Categories = () => {
                     </p>
                 </div>
 
-                {/* Categories Grid */}
+            
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 ml-10">
                     {categories.map((category, index) => (
                         <a

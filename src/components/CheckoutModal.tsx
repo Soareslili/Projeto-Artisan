@@ -42,7 +42,7 @@ const CheckoutModal = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate checkout process
+  
     await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
@@ -53,7 +53,7 @@ const CheckoutModal = () => {
       description: "You will receive a confirmation email shortly.",
     });
 
-    // Reset after showing success
+   
     setTimeout(() => {
       clearCart();
       setIsSuccess(false);
@@ -110,7 +110,7 @@ const CheckoutModal = () => {
         </DialogHeader>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Order Summary */}
+       
           <div className="bg-muted-foreground rounded-xl p-4 space-y-3">
             <h4 className="font-medium text-foreground">Resumo do Pedido</h4>
             {items.map((item) => (
@@ -127,7 +127,7 @@ const CheckoutModal = () => {
             </div>
           </div>
 
-          {/* Shipping Information */}
+       
           <div className="space-y-4">
             <h4 className="font-medium text-foreground">Informações de Entrega</h4>
             <div className="grid grid-cols-2 gap-4">
@@ -203,7 +203,7 @@ const CheckoutModal = () => {
             </div>
           </div>
 
-          {/* Payment Information */}
+         
           <div className="space-y-4">
             <h4 className="font-medium text-foreground">Informações de Pagamento</h4>
             <div className="space-y-2">

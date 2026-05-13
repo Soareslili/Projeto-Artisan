@@ -27,7 +27,7 @@ const Features = () => {
   return (
     <section className="section-padding bg-muted-foreground/45 py-20">
       <div className="container-custom">
-        {/* Header */}
+      
         <div className="text-center mb-16">
           <h2 className="heading-section text-3xl text-background font-Cormorant font-bold mb-4">Proteção máxima</h2>
           <p className="text-body text-accent-foreground max-w-2xl mx-auto">
@@ -35,8 +35,8 @@ const Features = () => {
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 ml-20">
+       
+        <div className="grid grid-cols-1 ml-6 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <div
               key={feature.title}

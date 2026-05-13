@@ -3,7 +3,7 @@ import heroBags from "../assets/hero.png";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-24">
-      {/* Background */}
+     
       <div className="absolute inset-0 z-0">
         <img
           src={heroBags}
@@ -11,17 +11,17 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
 
-        {/* Overlay */}
+    
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
       </div>
 
-      {/* Content */}
+    
     
       <div className="font-Inter relative z-10 max-w-2xl mt-24 md:mt-20 space-y-6 ml-20">
 
 
         <h1
-          className="text-5xl md:text-6xl font-extrabold leading-tight">
+          className="text-4xl md:text-6xl font-extrabold leading-tight">
           <span className="text-white font-CormorantGaramond italic" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             Melhor com a idade
           </span>

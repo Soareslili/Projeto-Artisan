@@ -34,9 +34,9 @@ const Footer = () => {
   return (
     <footer className="bg-foreground pt-16 pb-8">
       <div className="container-custom ml-8">
-        {/* Main Footer */}
+       
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-          {/* Brand Column */}
+          
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <span className="font-serif text-2xl font-semibold text-primary-foreground">
               ARTISAN
@@ -44,7 +44,7 @@ const Footer = () => {
             <p className="text-body text-muted-foreground mt-4 max-w-sm">
              Artigos de couro artesanais feitos com amor em São Francisco. Projetado para durar a vida toda.
             </p>
-            {/* Social Links */}
+          
             <div className="flex gap-4 mt-6">
               {socialLinks.map((social) => (
                 <a
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Shop Links */}
+        
           <div>
             <h4 className="text-small font-bold font-Inter text-accent-foreground uppercase tracking-wide mb-4">
            Comprar
@@ -78,7 +78,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Links */}
+        
           <div>
             <h4 className="text-small font-bold text-accent-foreground uppercase tracking-wide mb-4">
              Empresa
@@ -99,7 +99,7 @@ const Footer = () => {
 
          
 
-          {/* Legal Links */}
+         
           <div>
             <h4 className="text-small font-bold text-accent-foreground uppercase tracking-wide mb-4">
              Links
@@ -119,7 +119,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
+       
         <div className="border-t border-border pt-8 mr-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mr-8">
             <p className="text-small text-muted-foreground">
