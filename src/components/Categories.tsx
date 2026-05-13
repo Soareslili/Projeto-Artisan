@@ -42,7 +42,7 @@ const Categories = () => {
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                             </div>
-                            <span className="text-small font-medium text-card text-center ml-8">
+                            <span className="ml-6 md:text-small font-medium text-card">
                                 {category.name}
                             </span>
                         </a>
